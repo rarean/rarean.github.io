@@ -12,7 +12,6 @@
   <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
   <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
   <link rel="stylesheet" href="dev/css/styles.css" />
-  <link rel="stylesheet" href="dev/css/tailwind.min.css" />
   <!-- endbuild -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
   <link href="./dist/css/main.css" rel="stylesheet">
@@ -21,13 +20,22 @@
 </head>
 
 <body>
-  <div id="main" class="container">
+  <div class="container-fluid mt-5">
     <div class="row">
-      <div class="col-xsm-6 col-sm-9 col-md-9 col-lg-6 mt-5 imgBorder">
-        <img alt="selfy" src="./dist/img/selfy1.jpg" class="img-fluid rounded-lg mx-auto d-block">
-      </div>
-      <div class="col mt-5 mx-auto d-block p-4">
-        text goes here
+      <div id="main" class="col vw-100 mh-100">
+        <div class="row align-middle">
+          <div class="col-md-6 mx-auto my-auto">
+            <img alt="selfy" src="./dist/img/selfy1.jpg" class="img-fluid
+            rounded-lg mx-auto my-auto w-75 p-x-5">
+          </div>
+
+          <div class="col mt-md-5 mx-auto my-auto">
+            Title text goes here
+            <div class="col mx-auto">
+              Projects & link go here
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -37,10 +45,10 @@
   <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
   <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="dev/js/script.js"></script>
   <!-- endbuild -->
   <script src="./dist/js/main.js"></script>
   <script src="./dist/js/data.js"></script>
-  <script src="./dist/js/script.js"></script>
 </body>
 
 </html>
