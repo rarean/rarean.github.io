@@ -23,7 +23,7 @@ const main = {
     {
       name: 'Mail',
       iconName: 'mail-outline',
-      link: `mailto:${'db.robot@yahoo.com'}?Subject=Hello%20again`
+      link: "mailto:${}?Subject=Hello%20again"
     }
   ],
   links: [
