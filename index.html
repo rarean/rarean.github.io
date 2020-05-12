@@ -6,49 +6,63 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="shortcut icon" href="./dist/img/user.png" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 
   <!-- build:css css/main.css -->
-  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
-  <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
   <link rel="stylesheet" href="src/css/styles.css" />
   <!-- endbuild -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
-  <link href="./dist/css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="./dist/css/main.css" />
 
   <title>Portfolio</title>
 </head>
 
 <body>
-  <div class="container-fluid mt-5">
+  <div id="main" class="container-fluid mt-5">
     <div class="row">
-      <div id="main" class="col vw-100 mh-100">
-        <div class="row align-middle">
-          <div class="col-md-6 mx-auto my-auto">
-            <img alt="selfy" src="./dist/img/selfy1.jpg" class="img-fluid
-            rounded-lg mx-auto my-auto w-75 p-x-5">
-          </div>
-
-          <div class="col mt-md-5 mx-auto my-auto">
-            Title text goes here
-            <div class="col mx-auto">
-              Projects & link go here
+        <div class="col-sm-6 d-sm-block my-auto mx-auto border-lg-right imgBorder">
+          <img alt="selfy" src="./dist/img/selfy2.jpg" class="img
+          rounded-lg d-block mx-auto my-auto" style="width: 64%; height: auto;">
+        </div>
+        <div id="content" class="col-sm-6 d-sm-block my-auto mx-auto text-center">
+          <span id="name" class="d-block text-lg"> Aaron Perez </span >
+          <div id="carouselContent" class="carousel slide" data-ride="carousel">
+            <div id="hats" class="carousel-inner text-md" role="listbox">
+              <span class="carousel-item active p-4"><p>Engineer</p></span>
+              <span class="carousel-item p-4"><p>DevOps Enthusiast</p></span>
+              <span class="carousel-item p-4"><p>Architect</p></span>
+              <span class="carousel-item p-4"><p>Scrum Master</p></span>
+              <span class="carousel-item p-4"><p>Developer</p></span>
+              <span class="carousel-item p-4"><p>Servant Leader</p></span>
+              <span class="carousel-item p-4"><p>Instructor</p></span>
             </div>
           </div>
+          <span id="links" class="text-md">
+            <a href="https://github.com/rarean"><i class="fa fa-github mx-2"></i></a>
+            <a href="https://www.linkedin.com/in/aaronperez"><i class="fa fa-linkedin-square mx-2"></i></a>
+            <a href="mailto:db.robot@yahoo.com?Subject=Hello%20again"><i class="fa fa-envelope-square mx-2"></i></a>
+          </span>
         </div>
-      </div>
+         <div id="contact" class="col d-sm-block mx-auto my-auto text-center">
+            <a href="https://github.com/rarean" class="badge badge-light mt-5">Projects</a>  
+            <a href="mailto:db.robot@yahoo.com?Subject=Hello%20again" class="badge badge-light">
+              db.robot@yahoo.com
+            </a> 
+         </div> 
     </div>
   </div>
 
   <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
   <!-- build:js js/main.js -->
-  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
   <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src="src/js/script.js"></script>
   <!-- endbuild -->
   <script src="./dist/js/main.js"></script>
-  <script src="./dist/js/data.js"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+  crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" 
+  crossorigin="anonymous"></script>
 </body>
 
 </html>

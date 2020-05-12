@@ -7,8 +7,8 @@
     "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run copydata && npm run usemin",
     "clean": "rimraf dist",
     "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
-    "copydata": "copyfiles -f dev/js/* dist/js",
-    "imagemin": "imagemin dev/img/* -o dist/img",
+    "copydata": "copyfiles -f src/js/* dist/js",
+    "imagemin": "imagemin src/img/* -o dist/img",
     "lite": "lite-server",
     "start": "npm run lite",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -19,12 +19,8 @@
     "url": "git@github.com:rarean/rarean.github.io.git"
   },
   "author": "Aaron Perez",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
-    "bootstrap": "^4.4.1",
-    "bootstrap-social": "^5.1.1",
-    "font-awesome": "^4.7.0",
-    "jquery": "^3.4.1",
     "popper.js": "^1.16.0"
   },
   "devDependencies": {

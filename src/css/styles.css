@@ -1,27 +1,19 @@
+#main {
+  font-size: 1.2em;
+}
+.text-lg {
+  font-size: 4rem;
+}
+.text-md {
+  font-size: 2rem;
+}
 
-@media (min-width: 1024px) { 
-  #main {
-    font-size: 1.2em;
-    overflow: hidden;
-  }
+.imgBorder {
+  border-right: 2px solid lightgray;
+}
 
-  .img-fluid {
-    width: 80%;
-    height: auto;
-  }
-
-  .child {
-    position: relative;
-    top: 50%;
-    height: 100vh;
-    width: 100%;
-    margin-top: -128px; /* account for padding and border if not using box-sizing: border-box; */
-    overflow: hidden;
-  }
-
-  #main .imgBorder {
-    position: relative;
-    top: 50vh;
-    transform: translateY(-50%);
-  }
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev{
+  display: block;
 }
