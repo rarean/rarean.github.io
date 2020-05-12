@@ -4,6 +4,9 @@ jobs:
     docker:
       - image: circleci/node:12.9.0
     steps:
+      - add_ssh_keys:
+          fingerprints:
+            - "cf:e5:f6:39:98:d3:56:b5:3a:86:5b:7c:4d:a7:d0:eb"
       - checkout
       - run: npm install
       - run: npm run build
